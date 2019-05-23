@@ -5,7 +5,7 @@ const gameManager = new GameManager(document.getElementById('canvas'))
 window.game = gameManager
 gameManager.init()
 
-const tank1 = new Tank(10,10) 
+const tank1 = new Tank(30,30) 
 gameManager.registerObjects([tank1])
 
 const main = function(){
