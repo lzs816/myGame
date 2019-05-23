@@ -17,8 +17,8 @@ const KeyCode = {
 }
 
 class Point {
-    x = 0
-    y = 0
+    /* x;
+    y; */
     constructor(x, y) {
         this.x = x
         this.y = y
@@ -26,8 +26,8 @@ class Point {
 }
 
 class Circle {
-    point
-    r
+    /* point;
+    r; */
     constructor(point, r) {
         this.point = point
         this.r = r;
@@ -35,10 +35,10 @@ class Circle {
 }
 
 class Sharp {
-    point
-    canvas
-    ctx
-    game
+    /* point;
+    canvas;
+    ctx;
+    game; */
     constructor(width, height) {
         this.canvas = document.createElement('canvas')
         document.body.append(this.canvas)
@@ -115,10 +115,10 @@ class InputManager {
 }
 
 class TimeManager {
-    lastTime = void 0
-    step = void 0
-    printNumber = void 0
-    frameNumber = void 0
+   /*  lastTime;
+    step;
+    printNumber;
+    frameNumber; */
 
     constructor() {
         this.frameNumber = 0
@@ -155,14 +155,15 @@ class TimeManager {
 }
 
 class GameManager {
-    canvas = void 0
-    ctx = void 0
-    timeManager = new TimeManager()
-    inputManager = new InputManager()
-    drawObj = []
-    lockFrameNumber = 60;
+   /*  canvas;
+    ctx;
+    timeManager;
+    inputManager;
+    drawObj;
+    lockFrameNumber; */
 
     constructor(canvas) {
+        this.drawObj = new Array();
         this.inputManager = new InputManager()
         this.timeManager = new TimeManager()
         this.lockFrameNumber = 0;

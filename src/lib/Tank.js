@@ -2,14 +2,14 @@ import {Sharp,KeyCode, GameManager, Point} from "./Base.js"
 import { Bullet } from "./Bullet.js";
 
 class Tank extends Sharp {
-    width
-    height
-    speed
-    ag
+    /* _width
+    _height
+    _speed
+    _ag
     agRaw
     translateX
     translateY
-    img
+    img */
     setPoint(point){
         this.point.x = point.x
         this.point.y = point.y
@@ -25,7 +25,7 @@ class Tank extends Sharp {
         this.ag = 0
         this.agRaw = 0
         this.img = new Image()
-        this.img.src = "./img/tank1.png"
+        this.img.src = require('../img/tank1.png')
     }
 
     get angle (){

@@ -2,18 +2,14 @@ import { Sharp, KeyCode,Circle, Point } from "./Base.js"
 import { CanvasUtil } from "./Util.js"
 
 class Bullet extends Sharp {
-    width
+    /* _width
     height
     speed
     ag
     agRaw
     vx
-    hy
-
-    setPoint(point) {
-        this.point.x = point.x
-        this.point.y = point.y
-    }
+    hy */
+ 
 
     constructor(width = 10, height = 10, speed = 100, angle = 0) {
         super(width, height)
@@ -22,7 +18,10 @@ class Bullet extends Sharp {
         this.speed = speed
         this.angle = angle
     }
-    
+    setPoint(point) {
+        this.point.x = point.x
+        this.point.y = point.y
+    }
     init(){
         this.ctx.fillStyle = 'red'
         CanvasUtil.circle(this.ctx,new Circle(new Point(this.width/2,this.height/2),this.width/2))
